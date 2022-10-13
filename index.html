@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lub's Pizza</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <!-- Responsive -->
+    <link rel="stylesheet"
+      href="https://yui.yahooapis.com/combo?pure/0.5.0-rc-1/base-min.css&pure/0.5.0-rc-1/grids-min.css&pure/0.5.0-rc-1/grids-responsive-min.css">
+    <!-- Fonte Google -->
+    <link
+      href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,600,200italic,300italic'
+      rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <section class="bradcumps">
+      <div class="wrap">
+        <h1>Lub's Pizzaria</h1>
+        <p>A melhor pizza da cidade na palma da sua mão! - Horários de
+          atendimento: Segunda á Sabado, das 8:30 até ás 22:40</p>
+      </div>
+    </section>
+
+    <form class="formulario" id="formulario">
+      <!-- Div Pai -->
+      <div class="container">
+
+        <div class="py-5 text-center">
+          <h2>Página de Cadastro</h2>
+          <p class="lead">Caro cliente, para podermos registrar seu pedido por
+            favor preencha os formulários abaixo.</p>
+        </div>
+
+        <div style="margin-left: 25%;" action="" class="form">
+          <div class="col-md-7 col-lg-8">
+
+            <div class="row g-3">
+
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Seu Nome Completo</label>
+                <input type="text" class="form-control" id="nome_usuario"
+                  name="nome_usuario">
+              </div>
+
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Seu Telefone</label>
+                <input type="text" class="form-control" id="telefone_usuario"
+                  name="telefone_usuario" maxlength="15">
+              </div>
+
+              <div class="col-12 mb-3">
+                <label for="email" class="form-label">Seu Email</label>
+                <input type="email" class="form-control" id="email_usuario"
+                  name="email_usuario">
+              </div>
+
+              <input type="submit" style="height:35px; background-color:green;
+                border: none;" value="Enviar">
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </form>
+
+    <div class="container">
+      <div id="pagina_pedido">
+        <div class="py-5 text-center">
+          <h2>Página de Pedido 🍕</h2>
+          <p class="lead">Caro cliente, para podermos dar sequência ao pedido de
+            sua pizza, por favor preencha os formulários abaixo.</p>
+        </div>
+
+        <div style="margin-left: 25%;" action="" class="form">
+          <div class="col-md-7 col-lg-8">
+
+            <div class="row g-3">
+
+              <div class="col-sm-12">
+                <h5>Tamnanho <span style="font-size:14px;">Pequena até 2
+                    sabores, Médio até 3 sabores, Grande até 4 sabores</span></h5>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Escolha</option>
+                  <option id="Pequena" value="Pequena">Pequena R$ 10.00</option>
+                  <option id="Media" value="Media">Média R$ 10.00</option>
+                  <option id="Grande" value="Grande">Grande R$ 10.00</option>
+                </select>
+              </div>
+
+              <input type="submit" style="height:30px; border: none;"
+                onclick="tamanho()" value="Salvar">
+
+              <form action="" class="pizza" id="pizza">
+                <div class="col-sm-12">
+                  <h5>Sabores</h5>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox"
+                      id="Calabresa" value="Calabresa">
+                    <label class="form-check-label" for="inlineCheckbox1">Calabresa</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox"
+                      id="Chocolate" value="Chocolate">
+                    <label class="form-check-label" for="inlineCheckbox2">Chocolate</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Sorvete"
+                      value="Sorvete">
+                    <label class="form-check-label" for="inlineCheckbox3">Sorvete</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox"
+                      id="Portuguesa" value="Portuguesa">
+                    <label class="form-check-label" for="inlineCheckbox1">Portuguesa</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox"
+                      id="moda_da_casa" value="Moda da casa">
+                    <label class="form-check-label" for="inlineCheckbox2">A moda
+                      da Casa</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox"
+                      id="Mussarela" value="Mussarela">
+                    <label class="form-check-label" for="inlineCheckbox3">Mussarela</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox"
+                      id="Marguerita" value="Marguerita">
+                    <label class="form-check-label" for="inlineCheckbox1">Marguerita</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox"
+                      id="quatro_queijo" value="Quatro Queijo">
+                    <label class="form-check-label" for="inlineCheckbox2">Quatro
+                      queijos</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox"
+                      id="Frango_com_catupiry" value="Frango com catupiry">
+                    <label class="form-check-label" for="inlineCheckbox3">Frango
+                      com catupiry</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox"
+                      id="Alcachofra" value="Alcachofra">
+                    <label class="form-check-label" for="inlineCheckbox1">Alcachofra</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox"
+                      id="Mexicana" value="Mexicana">
+                    <label class="form-check-label" for="inlineCheckbox2">Mexicana</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox"
+                      id="Napolitana" value="Napolitana">
+                    <label class="form-check-label" for="inlineCheckbox3">Napolitana</label>
+                  </div>
+
+                </div>
+
+              </form>
+              <input type="submit" style="height:30px; border: none;"
+                onclick="pizza()" value="Salvar">
+              <div id="d"></div>
+
+
+              <div class="col-sm-12">
+                <h5>Adicionais</h5>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox"
+                    id="bordaRecheada" value="Borda Recheada">
+                  <label class="form-check-label" for="inlineCheckbox1">Borda
+                    Recheada R$ 5.00</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox"
+                    id="maisQueijo" value="Mais Queijo">
+                  <label class="form-check-label" for="inlineCheckbox2">Mais
+                    Queijo R$ 5.00</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox"
+                    id="maisChocolate" value="Mais Chocolate">
+                  <label class="form-check-label" for="inlineCheckbox3">Mais
+                    Chocolate R$ 5.00</label>
+                </div>
+              </div>
+
+              <input type="submit" style="height:30px; border: none;"
+                onclick="adicionais()" value="Salvar">
+
+
+              <div class="col-sm-12">
+                <h5>Bebidas</h5>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="cocaCola"
+                    value="Coca Cola">
+                  <label class="form-check-label" for="inlineCheckbox1">Coca
+                    Cola 1 litro R$ 6.00</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox"
+                    id="sucodeLaranja" value="Suco de Laranja">
+                  <label class="form-check-label" for="inlineCheckbox2">Suco de
+                    Laranja 500ml R$ 2.00</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="fantaUva"
+                    value="Fanta Uva">
+                  <label class="form-check-label" for="inlineCheckbox3">Fanta
+                    Uva 2 litros R$ 15.00</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox"
+                    id="fantaLaranja" value="Fanta Laranja">
+                  <label class="form-check-label" for="inlineCheckbox3">Fanta
+                    Laranja 2 litros R$ 15.00</label>
+                </div>
+              </div>
+
+              <input type="submit" style="height:30px; border: none;"
+                onclick="bebidas()" value="Salvar">
+
+
+              <div class="col-sm-12">
+                <h5>Retirada</h5>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox"
+                    id="retirarnoBalcao" value="Retirar no Balcão">
+                  <label class="form-check-label" for="inlineCheckbox1">Retirar
+                    no Balcão</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox"
+                    id="entregarnaCasa" value="Entregar em Casa">
+                  <label class="form-check-label" for="inlineCheckbox2">Entregar
+                    na Residência R$ 5.00</label>
+                </div>
+              </div>
+
+              <input type="submit" style="height:30px; border: none;"
+                onclick="rtirada()" value="Salvar">
+
+            </div>
+          <br>
+          <br>
+
+          </div>
+        </div>
+        <button class="btn btn-success mb-5" style="width:55%; margin-left: 290px;" id="sair">Finalizar Pedido</button>
+      </div>
+    </div>
+  </body>
+
+  <script src="./js/scripts.js"></script>
+</html>

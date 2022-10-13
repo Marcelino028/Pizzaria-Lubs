@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+html {
+  font: 700 16px/1.5 "Source Sans Pro", sans-serif;
+}
+
+body {
+  color: #000;
+  margin: 0;
+  padding: 0;
+  transition: all 0.4s ease;
+}
+
+.bradcumps {
+  background-color: #fffc00;
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
+
+
+
+.wrap {
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 80%;
+  }
+  
+  h1, .h1 {
+    font-size: 2.5em;
+    font-weight: 100;
+    margin: 0 0 0.525em;
+  }
+
+  .pure-g [class*=pure-u] {
+    font-family: "Source Sans Pro";
+  }
+
+  .container {
+    max-width: 960px;
+  }
+
+#div_1 input{
+  color: black;
+  font-size: 15px;
+  font-family: 'Open-Sans', 'sans-serif';
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+#div_2 input{
+  color: black;
+  font-size: 15px;
+  font-family: 'Open-Sans', 'sans-serif';
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+#div_3 input{
+  color: black;
+  font-size: 15px;
+  font-family: 'Open-Sans', 'sans-serif';
+  text-decoration: none;
+  border-radius: 20px;
+}

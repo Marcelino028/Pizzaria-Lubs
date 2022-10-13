@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lub's Pizza</title>
+
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+        <!-- Responsive -->
+        <link rel="stylesheet"
+            href="https://yui.yahooapis.com/combo?pure/0.5.0-rc-1/base-min.css&pure/0.5.0-rc-1/grids-min.css&pure/0.5.0-rc-1/grids-responsive-min.css">
+        <!-- Fonte Google -->
+        <link
+            href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,600,200italic,300italic'
+            rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+
+
+        <form class="formulario" id="formulario">
+            <!-- Div Pai -->
+            <div class="container">
+
+                <div class="py-5 text-center">
+                    <h2>Cofirmar Pedido 📜</h2>
+                </div>
+
+                <div style="margin-left: 25%;" action="" class="form">
+                    <div class="col-md-7 col-lg-8">
+
+                        <div class="row g-3">
+
+                            <button class="btn btn-primary"
+                                onclick="resultados_finais()">Mostra Pedido</button>
+                            <div class="resultados">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Nome</label>
+                                        <input type="text" disabled
+                                            class="form-control" id="joao">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Email</label>
+                                        <input ttype="text" disabled
+                                            class="form-control"
+                                            id="joao@gmail.com">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Telefone</label>
+                                        <input type="text" disabled
+                                            class="form-control" id="909009009">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Tamanho
+                                            da Pizza</label>
+                                        <input type="text" disabled
+                                            class="form-control" id="Pequena">
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label
+                                            for="exampleFormControlTextarea1">Sabores</label>
+                                        <textarea class="form-control" disabled
+                                            id="Chocolate" rows="3"></textarea>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Adicional</label>
+                                        <input type="text" disabled
+                                            class="form-control"
+                                            id="bordaRecheada">
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Bebidas</label>
+                                        <input type="text" disabled
+                                            class="form-control" id="cocaCola">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Retirada</label>
+                                        <input type="text" disabled
+                                            class="form-control"
+                                            id="retirarnoBalcao">
+                                    </div>
+
+                                    <div class="form-group mb-5">
+                                        <label for="exampleFormControlInput1">Preço</label>
+                                        <input type="text" disabled
+                                            class="form-control" id="preco">
+                                    </div>
+
+                                </form>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </form>
+
+
+    </body>
+
+    <script src="./js/scripts.js"></script>
+</html>
